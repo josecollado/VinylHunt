@@ -1,0 +1,25 @@
+version: "3.3"
+services: 
+    mongo:
+        image: mongo:latest
+        restart: always
+        environment: 
+            - MONGO_INITDB_DATABASE=vinylhunt
+            - MONGO_INITDB_ROOT_USERNAME=mongo
+            - MONGO_INITDB_ROOT_PASSWORD=password
+        ports: 
+            - "27017:27017"
+        volumes: 
+            - .mongodata:/data/db 
+    web:
+        container_name: node-server
+        image: node
+        volumes:
+            - .:/usr/src/app
+        working_dir: /usr/src/app
+        depends_on:
+            - mongo
+        restart: on-failure
+        command: "npm run build-prod"
+        ports: 
+            - "3000:3000"

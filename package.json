@@ -9,8 +9,9 @@
   "scripts": {
     "clean": "rm client/dist/bundle.js",
     "build-dev": "webpack -d --watch --mode development",
-    "build-prod": "webpack -p --mode production",
-    "start": "nodemon server/index.js" 
+    "build-prod": "webpack -p --mode production && npm start",
+    "start": "node server/index.js",
+    "dev-start": "nodemon server/index.js"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.0",
