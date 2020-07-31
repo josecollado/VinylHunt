@@ -1,5 +1,23 @@
 
-h1 {
-  color: white;
-  background-color: black;
+
+.button-div, .search-div,.list-choice{
+  display: flex;
+  border: 3px solid black;
+  justify-content: center;
+}
+.app-title,.listView{
+  display: flex;
+  justify-content: center;
+}
+.searchBy{
+  display: flex;
+  justify-content: center;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  border: 3px solid black;
+  max-width: 600px;
+  margin: auto;
+  justify-content: center;
 }
