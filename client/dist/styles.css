@@ -1,23 +1,75 @@
+li{
+  list-style-type: none;
+}
 
+#album-btn, #search-input, #hunt-list-btn{
+  margin-right: 25px;
+}
+.add-btn{
+  margin-left: 10px;
+}
+
+.album-list-label{
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+#clear-list-btn{
+  margin-left: 140px;
+}
+#search-btn{
+  margin-left: 20px;
+}
 
 .button-div, .search-div,.list-choice{
   display: flex;
-  border: 3px solid black;
   justify-content: center;
+  margin-bottom: 30px;
 }
-.app-title,.listView{
+.app-title,.listView, .albums, .album-list-title{
   display: flex;
   justify-content: center;
+}
+.album-list-title{
+  margin-bottom: 15px;
 }
 .searchBy{
   display: flex;
   justify-content: center;
+  margin-bottom: 10px;
 }
 .container{
+  border-radius: 25px;
   display: flex;
   flex-direction: column;
   border: 3px solid black;
   max-width: 600px;
   margin: auto;
   justify-content: center;
+}
+
+img.img-thumb {
+  max-width: 150px;
+  max-height: 125px;
+  margin: auto;
+}
+
+li.tile-list {
+  overflow-y: auto;
+  max-height: 300px;
+  max-width: 450px;
+  margin-bottom: 30px;
+}
+.desc-tile-div{
+  overflow-y: auto;
+  max-height: 100px;
+}
+
+.artist-tile-div,.album-tile-div,.release-tile-div,.desc-tile-div{
+  /* border: 5px solid black; */
+  margin: auto;
+}
+.artist-tile-div,.album-tile-div,.release-tile-div{
+  margin: auto;
+  margin-bottom: 10px;
 }

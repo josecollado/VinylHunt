@@ -80,30 +80,30 @@ class App extends React.Component {
           {this.state.artistBtn
             ?
           <div className='button-div'>
-            <Button  variant='contained' size='small' color='default' onClick={()=> this.handleSearchByClick('album')}>Album</Button>
+            <Button id='album-btn' variant='contained' size='small' color='default' onClick={()=> this.handleSearchByClick('album')}>Album</Button>
             <Button  variant='contained' size='small' color='primary' >Artist</Button>
           </div>
             :
           <div className='button-div'>
-            <Button  variant='contained' size='small' color='primary'>Album</Button>
+            <Button id='album-btn' variant='contained' size='small' color='primary'>Album</Button>
             <Button  variant='contained' size='small' color='default' onClick={()=> this.handleSearchByClick('artist')} >Artist</Button>
           </div>  
           }
         <div className='search-div'>
           {this.state.artistSearch
           ?
-          <TextField  placeholder='Enter Artist Name...' value={this.state.lookUpVal} onChange={this.handleChange.bind(this)} />
+          <TextField id='search-input' placeholder='Enter Artist Name...' value={this.state.lookUpVal} onChange={this.handleChange.bind(this)} />
           :
-          <TextField  placeholder='Enter Album Name...' value={this.state.lookUpVal} onChange={this.handleChange.bind(this)}  />
+          <TextField id='search-input' placeholder='Enter Album Name...' value={this.state.lookUpVal} onChange={this.handleChange.bind(this)}  />
           }
-          <Button type='submit' variant='outlined' size='small' onClick={this.handleSearchClick.bind(this)} >Search</Button>
+          <Button id='search-btn' type='submit' variant='outlined' size='small' onClick={this.handleSearchClick.bind(this)} >Search</Button>
         </div>
         <div className='albums'>
           {
             this.state.albumList.length > 0 
             ?
             <ul> 
-            <p className='album-list-label'>Please Select Which Album to Add to the either list</p>
+            <p className='album-list-label'>Select An Album to add to your collection or to your hunt list</p>
               {this.state.albumList.map((val,idx) => {
                 if(this.state.artistBtn && this.state.artistSearch){
                   return (
@@ -125,7 +125,7 @@ class App extends React.Component {
                   )
                 }
               })}
-              <Button variant='contained' size='small' onClick={this.clearList.bind(this)} style={{maxHeight:"20px", maxWidth:"100px", fontSize: "10px", marginTop: "18px" }}>Clear List</Button>
+              <Button id='clear-list-btn' variant='contained' size='small' onClick={this.clearList.bind(this)} style={{maxHeight:"20px", maxWidth:"100px", fontSize: "10px", marginTop: "18px" }}>Clear List</Button>
             </ul>
             :
             <></>
@@ -141,12 +141,12 @@ class App extends React.Component {
           this.state.listView === 'collection'
           ?
           <div className='list-choice'>
-            <Button variant='contained' size='small' color='default' onClick={() => this.changeListView('hunt')} >Hunt List</Button>
+            <Button id='hunt-list-btn' variant='contained' size='small' color='default' onClick={() => this.changeListView('hunt')} >Hunt List</Button>
             <Button variant='contained' size='small' color='primary' >Collection</Button>
           </div>  
           :
           <div className='list-choice'>
-            <Button variant='contained' size='small' color='primary' >Hunt List</Button>
+            <Button id='hunt-list-btn' variant='contained' size='small' color='primary' >Hunt List</Button>
             <Button variant='contained' size='small' color='default' onClick={() => this.changeListView('collection')} >Collection</Button>
           </div>
         }
@@ -157,7 +157,7 @@ class App extends React.Component {
               <ul>
                 {this.state.hunt.map((element,idx) =>{
                   return (
-                    <li key={idx}>
+                    <li key={idx} className='tile-list'>
                       <img src={element.strAlbumThumb} alt={`${element.strAlbum} Album Cover `} className='img-thumb' />
                       <div className='artist-tile-div'>Artist : {element.strArtist}</div>
                       <div className='album-tile-div'>Album : {element.strAlbum}</div>
@@ -171,7 +171,7 @@ class App extends React.Component {
               <ul>
                 {this.state.collection.map((element,idx) =>{
                   return (
-                    <li key={idx}>
+                    <li key={idx} className='tile-list'>
                       <img src={element.strAlbumThumb} alt={`${element.strAlbum} Album Cover `} className='img-thumb' />
                         <div className='artist-tile-div'>Artist : {element.strArtist}</div>
                         <div className='album-tile-div'>Album : {element.strAlbum}</div>
