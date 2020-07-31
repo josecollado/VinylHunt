@@ -173,8 +173,8 @@ class App extends React.Component {
                   return (
                     <li key={idx} className='tile-list'>
                       <img src={element.strAlbumThumb} alt={`${element.strAlbum} Album Cover `} className='img-thumb' />
-                        <div className='artist-tile-div'>Artist : {element.strArtist}</div>
-                        <div className='album-tile-div'>Album : {element.strAlbum}</div>
+                        <div className='artist-tile-div'>Artist: {element.strArtist}</div>
+                        <div className='album-tile-div'>Album: {element.strAlbum}</div>
                         <div className='release-tile-div'>Release Date : {element.intYearReleased}</div>
                         <div className='desc-tile-div'>Album Description : {element.strDescriptionEN}</div>
                     </li>
