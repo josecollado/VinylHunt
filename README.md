@@ -16,13 +16,23 @@ Vinyl Hunt is an web application that allows a user to keep track of the their v
 ###Building and Running on local host
   ** *Docker must be installed within local machine* **
   1. Install Dependencies within root file
-   `npm install`
+   ```sh
+   npm install
+   ```
+   
 
   2. Execute Docker Compose to build container 
-   `docker-compose up` 
+   ```sh
+   docker-compose up
+   ```
+    
   3. Both Web and Database containers should be running after 15 sec.
   4. To see if containers are up and running, execute command 
-   `docker ps`
+   ```sh
+   docker ps
+   ```
+   
+   
 
 
 ###Future Implementations
