@@ -1,8 +1,8 @@
-#Vinyl Hunt 
+Vinyl Hunt 
 ---
 Vinyl Hunt is an web application that allows a user to keep track of the their vinyl record collection list and a list of records they are looking to purchase(hunt). Containerized using docker compose,
 
-###Tech Stack
+Tech Stack
 ---
 - React
 - Webpack
@@ -13,7 +13,7 @@ Vinyl Hunt is an web application that allows a user to keep track of the their v
 - Mongoose
 - MongoDB
 
-###Building and Running on local host
+Building and Running on local host
   ** *Docker must be installed within local machine* **
   1. Install Dependencies within root file
    `npm install`
@@ -25,7 +25,7 @@ Vinyl Hunt is an web application that allows a user to keep track of the their v
    `docker ps`
 
 
-###Future Implementations
+Future Implementations
 ---
 - User Login / Authentication 
 - User data stored within Database
