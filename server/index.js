@@ -13,5 +13,5 @@ mongoose.connect("mongodb://mongo:27017/vinylhunt", { useNewUrlParser: true })
 .catch((err) => console.log(err))
 
 
-const port = 3000
+const port = 3001
 app.listen(port, () => console.log(`App listening at http://localhost:${port}`));
