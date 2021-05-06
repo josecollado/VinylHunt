@@ -8,9 +8,9 @@ const mongoose = require('mongoose');
 app.use(express.static(path.join(__dirname, '../client/dist')))
 app.use(cors())
 
-mongoose.connect("mongodb://mongo:27017/vinylhunt", { useNewUrlParser: true })
-.then(() => console.log('connected to database'))	
-.catch((err) => console.log(err))
+// mongoose.connect("mongodb://mongo:27017/vinylhunt", { useNewUrlParser: true })
+// .then(() => console.log('connected to database'))	
+// .catch((err) => console.log(err))
 
 
 const port = 3001
