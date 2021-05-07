@@ -1,3 +1,6 @@
+**API FIX AND REFACTORING IN PROGRESS**
+
+
 Vinyl Hunt 
 ---
 Vinyl Hunt is an web application that allows a user to keep track of the their vinyl record collection list and a list of records they are looking to purchase(hunt). Containerized using docker compose,
