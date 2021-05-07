@@ -9,7 +9,7 @@
   "scripts": {
     "clean": "rm client/dist/bundle.js",
     "build-dev": "webpack -d --watch --mode development",
-    "build-prod": "npm install && npm rebuild node-sass && webpack -p --mode production && node server/index.js",
+    "build-prod": "npm install && npm run clean && webpack -p --mode production && node server/index.js",
     "start": "nodemon server/index.js"
   },
   "dependencies": {
@@ -31,7 +31,6 @@
     "@babel/preset-react": "^7.10.4",
     "babel-loader": "^8.1.0",
     "css-loader": "^3.6.0",
-    "node-sass": "^4.14.1",
     "sass-loader": "^9.0.2",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",

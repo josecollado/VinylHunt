@@ -13,5 +13,5 @@ app.use(cors())
 // .catch((err) => console.log(err))
 
 
-const port = 3001
-app.listen(port, () => console.log(`App listening at http://localhost:${port}`));
+const port = 3000
+app.listen(port, () => console.log(`App is now running and listening at http://localhost:${port}`));
