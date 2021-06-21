@@ -1,7 +1,10 @@
 ***** **API FIX AND REFACTORING IN PROGRESS** *****
 
 
+
 Vinyl Hunt 
+
+![Front Page](images/home.jpg)
 ---
 Vinyl Hunt is an web application that allows a user to keep track of the their vinyl record collection list and a list of records they are looking to purchase(hunt). Containerized using docker compose,
 
@@ -13,8 +16,6 @@ Tech Stack
 - Axios
 - Docker Compose
 - Express
-- Mongoose
-- MongoDB
 
 Building and Running on local host
   ** *Docker must be installed within local machine* **
@@ -35,7 +36,8 @@ Building and Running on local host
    docker ps
    ```
    
-   
+![Search results](images/search.jpg)
+![Saved list](images/results.jpg)
 
 
 Future Implementations
