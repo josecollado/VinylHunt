@@ -2,11 +2,11 @@
 
 
 
-#Vinyl Hunt 
+Vinyl Hunt 
 
-<div style="width:150px; height:100px">
+
 ![Front Page](images/home.jpg)
-</div>
+
 
 ---
 Vinyl Hunt is an web application that allows a user to keep track of the their vinyl record collection list and a list of records they are looking to purchase(hunt). Containerized using docker compose,
