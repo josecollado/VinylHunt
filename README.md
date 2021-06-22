@@ -2,9 +2,10 @@
 
 
 
-Vinyl Hunt 
+<h1>Vinyl Hunt</h1> 
 
-![Front Page](images/home.jpg)
+<img src='./images/home.jpg' width='300px' height='300px' />
+
 ---
 Vinyl Hunt is an web application that allows a user to keep track of the their vinyl record collection list and a list of records they are looking to purchase(hunt). Containerized using docker compose,
 
@@ -36,8 +37,9 @@ Building and Running on local host
    docker ps
    ```
    
-![Search results](images/search.jpg)
-![Saved list](images/results.jpg)
+<img src='./images/results.jpg' width='300px' height='300px' />
+<img src='./images/search.jpg' width='300px' height='300px' />
+
 
 
 Future Implementations
